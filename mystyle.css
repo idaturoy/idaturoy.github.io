@@ -57,14 +57,33 @@ color: #ffffff;
 background-color: #ffffff; /* White */
 color: #555555;
 }
+.bg-4 {
+  background-color: #2f2f2f;
+  color: #ffffff;
+  }
 .container-fluid {
 padding-top: 70px;
 padding-bottom: 70px;
+padding-left: 20px;
+padding-right: 20px;
 }
 
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-.bg-4 {
-background-color: #2f2f2f;
-color: #ffffff;
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }

@@ -22,6 +22,7 @@ text-decoration: none;
   letter-spacing: 5px;
   display: flex;
   flex-direction: row-reverse;
+
 }
 .subnavbar{
   width: 100%;
@@ -41,14 +42,14 @@ text-decoration: none;
   margin-left: 60px;
   height: 100px;
 }
-.imageRed {
- height: 1000px;
+.imageJelly {
+ height: 700px;
  position: relative;
- top: 50px;
- left: 250px;
- filter: blur(1.5px);
+ top: 70px;
+ left: 470px;
+ filter: blur(0px);
  z-index:1;
-
+margin: 20px;
 }
 .textOver {
   z-index: 2;
@@ -60,9 +61,16 @@ text-decoration: none;
 } 
 
 .content {
-  width: 100%;
-}
+  width: 50%;
 
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 80px 200px auto ;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
 
 .header {
   padding: 60px;
@@ -101,13 +109,20 @@ padding-right: 20px;
 
 .h1 {
 
-  font-size: 46px;
+  font-size: 1px;
 }
 .h2 {
-  font-size: 30px;
+  font-size: 7px;
 }
 
 .taiwanImg {
   rotate: 90deg;
   height: 100px;
 }
+
+.color1 {
+
+  background-color: coral;
+
+}
+

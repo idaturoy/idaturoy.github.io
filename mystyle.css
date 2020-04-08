@@ -43,34 +43,44 @@ text-decoration: none;
   height: 100px;
 }
 .imageJelly {
- height: 700px;
+ height: 400px;
  position: relative;
- top: 70px;
- left: 470px;
+ top: 0px;
+ float: right;
  filter: blur(0px);
- z-index:1;
-margin: 20px;
+margin: 0px;
 }
-.textOver {
-  z-index: 2;
-  position: relative;
-  bottom: 600px;
-  left: 40px;
-  width: 520px;
-  height: 200px;
+.itemText {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.textContainer {
+  width: 40%;
+  display: table-cell;
 } 
 
-.content {
+.imageContainer {
   width: 50%;
+  float: left;
+  display: table-cell;
+}
 
+.numberContainer {
+  width: 10%;
+  float: left;
+  display: table-cell;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: 80px 200px auto ;
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+.vl {
+  border-left: 1px solid rgb(39, 29, 12);
+  height: 50px;
+  position: relative;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;s
 }
+
 
 .header {
   padding: 60px;
@@ -80,18 +90,24 @@ margin: 20px;
 }
 
 .container-fluid {
-padding-top: 70px;
-padding-bottom: 70px;
-padding-left: 20px;
-padding-right: 20px;
+  display: table;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
+  display: table-cell;
   float: left;
-  width: 50%;
+  width: 33%;
 }
 
+.row {
+  
+  
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -115,14 +131,4 @@ padding-right: 20px;
   font-size: 7px;
 }
 
-.taiwanImg {
-  rotate: 90deg;
-  height: 100px;
-}
-
-.color1 {
-
-  background-color: coral;
-
-}
 

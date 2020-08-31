@@ -37,7 +37,7 @@ text-decoration: none;
 }
 .row{
   width: 100%;
-  padding: 60px;
+  padding: 70px;
 }
 .row.first{
   background-color: rgb(229, 177, 153);
@@ -47,12 +47,13 @@ text-decoration: none;
 }
 .row.third{
   background-color: rgb(152, 173, 152);
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 /* Create three equal columns that floats next to each other */
 .column{
   float: none;
+  padding-bottom: 10px;
 }
 /* Left and right column */
 .column.three {
@@ -83,6 +84,7 @@ h1{
   font-size: 36px;
   color: #ffffff;
   word-spacing: 10px;
+  font-style: italic;
 }
 h2{
   font-size: 3px;
@@ -91,7 +93,6 @@ h2{
 }
 h3{
   color: black;
-
 }
 .image{
   padding: 5px;

@@ -24,6 +24,7 @@ text-decoration: none;
   font-size: 15px;
   letter-spacing: 5px;
   border: none;
+  padding-left: 20px;
 }
 .navbar-container{
   display: flex;
@@ -31,7 +32,7 @@ text-decoration: none;
 }
 
 .navbar-right{
-  padding-left: 34rem;
+  padding-left: 800px;
 }
 .navbar-navs{
   margin: 10px 5px 5px 10px;
@@ -42,12 +43,18 @@ a {
   text-decoration: none;
   color: black;
 }
+a:hover{
+  color: rgb(84, 124, 78);
+}
 
 li {
   float: right;
   margin: 5px;
   text-align: center;
   padding: 15px;
+}
+.icon {
+  display: none;
 }
 
 .subscribe{
@@ -69,7 +76,7 @@ li {
 }
 
 .center-text{
-  padding-top: 25%;
+  padding-top: 20%;
 }
 
 .row{
@@ -91,12 +98,13 @@ li {
   grid: 250px 250px/ auto auto auto;
   grid-gap: 15px;
   width: 90%;
+  margin: auto;
 }
 .six-grid > div{
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
-  margin: 10px;
+  overflow: hidden;
 }
 .text-box{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -105,24 +113,21 @@ li {
 
 .two-col{
   display: grid;
-  grid-template-columns: 520px 520px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 400px;
   grid-gap: 0;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 .two-col > div{
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
   margin-top: 10px;
+
 }
 .title-padding{
   padding: 20px 10px 0px 10px;
-}
-.text{
-  background-image: url("img/leaves-cut.jpg");
-  background-color: transparent;
-  height: max-content;
 }
 
 /* Clear floats after the columns */
@@ -133,8 +138,12 @@ li {
 }
 /* Responsive layout - makes the columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
-  .six-grid{
+  .six-grid, .two-col, .two-col > div{
     width: 100%;
+  }
+  a {display: none;}
+  .icon {
+    display: flex;
   }
 }
 
@@ -155,8 +164,8 @@ h3{
   padding: 15px 50px 10px 50px;
 }
 .image{
-  width: 20rem;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .imageMedium{
@@ -180,4 +189,12 @@ a:link {
   width: 80px;
   margin: auto;
   margin-top: 10px;
+}
+
+footer {
+  background-color: rgb(30, 88, 81);
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
 }

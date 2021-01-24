@@ -1,7 +1,7 @@
 @charset "UTF-8";
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Cormorant Garamond', serif;
 }
@@ -9,64 +9,122 @@ body, html {
 
 line-height: 1.8;
 height: 100%; 
-background-color: rgb(231, 210, 200);
+background-color: whitesmoke;
 text-decoration: none;
 }
 .wrapper {
-   max-width: 960px;
-   margin: 0 auto;
+   max-width: 96%;
+   margin: auto;
+   padding: 10px;
 }
 .navbar {
   width: 100%;
-  padding: 30px;
-  font-size: 12px;
+  height: 80px;
+  background-color: transparent;
+  font-size: 15px;
   letter-spacing: 5px;
+  border: none;
+}
+.navbar-container{
   display: flex;
-  flex-direction: row-reverse;
-  background-color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 
-.navbar-text{
-  margin: 0 10px;
+.navbar-right{
+  padding-left: 34rem;
+}
+.navbar-navs{
+  margin: 10px 5px 5px 10px;
+  list-style-type: none;
+  display: flex;
+}
+a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
+
+li {
+  float: right;
+  margin: 5px;
+  text-align: center;
+  padding: 15px;
+}
+
+.subscribe{
+  border: 2px solid black;
+  padding: 10px 20px 10px 20px;
+}
+
 .logo {
-  margin-left: 60px;
-  height: 100px;
+  height: 40px;
+  margin: 20px;
 }
+
+.header-image {
+  height: 800px;
+  background-image: url('img/leaves-cut.jpg');
+  background-size: cover;
+  text-align: center;
+  margin-top: -90px;
+}
+
+.center-text{
+  padding-top: 25%;
+}
+
 .row{
   width: 100%;
-  padding: 70px;
+  padding: 70px 0px 70px 0px;
 }
 .row.first{
-  background-color: rgb(229, 177, 153);
+  background-color: hsl(85, 33%, 83%);
+  margin-top: 20px;
 }
-.row.second{
-  background-color: whitesmoke;
-}
-.row.third{
-  background-color: rgb(152, 173, 152);
-  padding-bottom: 30px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column{
-  float: none;
-  padding-bottom: 10px;
-}
-/* Left and right column */
-.column.three {
-  width: 33%;
-  float: left;
-  display: block;
-}
-/* Middle column */
-.column.center {
+.text-banner {
   margin: auto;
   width: 50%;
   text-align: center;
+  margin-bottom: 20px;
 }
+.six-grid {
+  display: grid;
+  grid: 250px 250px/ auto auto auto;
+  grid-gap: 15px;
+  width: 90%;
+}
+.six-grid > div{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+}
+.text-box{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px; 
+}
+
+.two-col{
+  display: grid;
+  grid-template-columns: 520px 520px;
+  grid-template-rows: 400px;
+  grid-gap: 0;
+  width: 100%;
+}
+.two-col > div{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.title-padding{
+  padding: 20px 10px 0px 10px;
+}
+.text{
+  background-image: url("img/leaves-cut.jpg");
+  background-color: transparent;
+  height: max-content;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -75,32 +133,36 @@ text-decoration: none;
 }
 /* Responsive layout - makes the columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
-  .column.side, .column.middle{
+  .six-grid{
     width: 100%;
   }
 }
 
 h1{
-  font-size: 36px;
-  color: #ffffff;
-  word-spacing: 10px;
-  font-style: italic;
+  font-size: 120px;
+  color: #222121;
+  font-family: 'Montserrat', sans-serif;
 }
 h2{
-  font-size: 3px;
   font-size: 20px;
-  color: #ffffff;
+  color: #222121;
+  font-family: 'Montserrat', sans-serif;
 }
 h3{
-  color: black;
+  font-size: 15px;
+  color: #222121;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px 50px 10px 50px;
 }
 .image{
-  padding: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 250px;
-  height: 400px;
+  width: 20rem;
+  height: 300px;
+  object-fit: cover;
+}
+.imageMedium{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .imageBig{
   display: block;
@@ -111,3 +173,11 @@ a:link {
   text-align: center;
 }
 
+.vertical-line{
+  border-bottom: 1px solid #222121;
+}
+.center-small-div{
+  width: 80px;
+  margin: auto;
+  margin-top: 10px;
+}

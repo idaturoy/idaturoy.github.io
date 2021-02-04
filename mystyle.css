@@ -3,63 +3,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cormorant Garamond', serif;
+  color: #222121;
+  font-family: 'Montserrat', sans-serif;
 }
 body, html {
-
-line-height: 1.8;
-height: 100%; 
-background-color: whitesmoke;
-text-decoration: none;
+  line-height: 1.8;
+  height: 100%; 
+  background-color: whitesmoke;
+  text-decoration: none;
 }
 .wrapper {
    max-width: 96%;
    margin: auto;
-   padding: 10px;
 }
 .navbar {
-  width: 100%;
-  height: 80px;
-  background-color: transparent;
-  font-size: 15px;
-  letter-spacing: 5px;
-  border: none;
-  padding-left: 20px;
-}
-.navbar-container{
   display: flex;
-  overflow: hidden;
+  justify-content: space-between;
 }
 
-.navbar-right{
-  padding-left: 800px;
-}
-.navbar-navs{
-  margin: 10px 5px 5px 10px;
-  list-style-type: none;
+.navbar-links ul {
+  margin: 10px 5px 5px 0px;
   display: flex;
+}
+.navbar-links li {
+  text-align: center;
+  padding: 15px;
+  list-style: none;
+}
+.navbar-links li a {
+  color: black;
+  padding: 1rem;
+  display: block;
+}
+.navbar-links li a:hover{
+  color: rgb(84, 124, 78);
 }
 a {
   text-decoration: none;
-  color: black;
-}
-a:hover{
-  color: rgb(84, 124, 78);
 }
 
-li {
-  float: right;
-  margin: 5px;
-  text-align: center;
-  padding: 15px;
-}
-.icon {
-  display: none;
-}
-
-.subscribe{
+#subscribe {
   border: 2px solid black;
   padding: 10px 20px 10px 20px;
+}
+
+#subscribe:hover {
+  border-color: rgb(84, 124, 78);
 }
 
 .logo {
@@ -67,23 +56,83 @@ li {
   margin: 20px;
 }
 
+.toggle-botton {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.toggle-botton .line {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transition: transform 0.75s ease, opacity 0.75s ease;
+
+}
+.navbar.show .line1 {
+  transform: translate(-15px) rotate(45deg) translate(15px);
+}
+.navbar.show .line2 {
+  opacity: 0;
+}
+.navbar.show .line3 {
+  transform: translate(-10px) rotate(-50deg) translate(10px);
+}
+.navbar.show .nav-links {
+  transform: translateX(0%);
+}
+
+@media (max-width: 600px) {
+  .toggle-botton { 
+    display: flex;
+  }
+ 
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+
+  }
+  .navbar-links ul {
+    justify-content: space-around;
+    align-items: flex-start;
+    z-index: auto;
+  }
+  #subscribe {
+    border: none;
+  }
+  .navbar-links.active {
+    display: inline;
+  }
+}
+
 .header-image {
-  height: 800px;
+  height: 100vh;
   background-image: url('img/leaves-cut.jpg');
   background-size: cover;
-  text-align: center;
-  margin-top: -90px;
 }
 
-.center-text{
-  padding-top: 20%;
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.row{
+.row {
   width: 100%;
   padding: 70px 0px 70px 0px;
 }
-.row.first{
+.row.first {
   background-color: hsl(85, 33%, 83%);
   margin-top: 20px;
 }
@@ -93,29 +142,39 @@ li {
   text-align: center;
   margin-bottom: 20px;
 }
-.six-grid {
-  display: grid;
-  grid: 250px 250px/ auto auto auto;
-  grid-gap: 15px;
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
   width: 90%;
   margin: auto;
 }
-.six-grid > div{
+.card{
+  padding: 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.cardImage {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+.text-box{
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
   overflow: hidden;
-}
-.text-box{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 20px; 
+  flex-grow: 1;
+  padding: 1rem;
 }
 
 .two-col{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 400px;
-  grid-gap: 0;
   width: 90%;
   margin: auto;
 }
@@ -136,43 +195,26 @@ li {
   display: table;
   clear: both;
 }
-/* Responsive layout - makes the columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
-  .six-grid, .two-col, .two-col > div{
-    width: 100%;
-  }
-  a {display: none;}
-  .icon {
-    display: flex;
-  }
-}
 
 h1{
   font-size: 120px;
-  color: #222121;
-  font-family: 'Montserrat', sans-serif;
 }
 h2{
   font-size: 20px;
-  color: #222121;
-  font-family: 'Montserrat', sans-serif;
 }
 h3{
   font-size: 15px;
-  color: #222121;
-  font-family: 'Montserrat', sans-serif;
-  padding: 15px 50px 10px 50px;
+  padding: 15px 30px 10px 30px;
+}
+h4 {
+  font-family: 'Cormorant Garamond', serif;
 }
 .image{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.imageMedium{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 .imageBig{
   display: block;
   width: 100%;
@@ -197,4 +239,5 @@ footer {
   color: white;
   text-align: center;
   font-size: .75rem;
+  margin: 0 -40px -20px -40px;
 }

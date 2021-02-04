@@ -14,67 +14,93 @@
 </head>
 
 <body>
-
   <div class="wrapper">
-    <nav class="navbar">
-      <div class="navbar-container">
+    <div class="header-image">
+      <nav class="navbar">
         <a href='#'><img src="img/logo.svg" class="logo" ></a>
-        <div class="navbar-right">
-            <ul class="navbar-navs">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Articles</a></li>
-              <li><a class="subscribe" href="#">Subscribe</a></li>
-              <li><a class="icon"><i class="fa fa-bars"></i></a></li>
+        <div class="toggle-botton">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <div class="navbar-links">
+            <ul>
+              <li><h4><a href="#">About</a></h4></li>
+              <li><h4><a href="#">Articles</a></h4></li>
+              <li><h4><a id="subscribe" href="#">Subscribe</a></h4></li>
             </ul>
         </div>
-      </div>
-    </nav>
-
-    <div class="header-image">
+      </nav>
       <div class="center-text">
         <h1>OPIA</h1>
+      </div>
     </div>
-    </div>
+ 
     <div class="row first">
         <div class="text-banner">
             <h2> the profound feeling of realizing that everyone has a life as complex as its own </h2>
         </div>
     </div>
     <div class="row">
-      <div class="text-banner"><h2>LATEST  ARTICLES </h2>
-      <div class="center-small-div"><div class="vertical-line"> </div></div>
-
-      </div>
-      <div class="six-grid">
-        <div>
-          <img src="img/annie-spratt-cEG1u0_UCR8-unsplash.jpg" alt="Flowers in Chania" class="image">
+      <div class="text-banner">
+        <h2>LATEST ARTICLES </h2>
+        <div class="center-small-div">
+          <div class="vertical-line"> </div>
         </div>
-        <div>
-            <img src="img/annie-spratt-zqydEHovUkE-unsplash.jpg" alt="Flowers in Chania" class="image item2">
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="img/annie-spratt-cEG1u0_UCR8-unsplash.jpg" alt="Flowers in Chania" class="cardImage">
+          <div class="text-box">
+            <h2>SONDER</h2>
+            <h3>is a word you might have to google, cuz I am too mysterious to tell you right away.</h3>
           </div>
+        </div>
+
+        <div class="card">
+          <img src="img/annie-spratt-zqydEHovUkE-unsplash.jpg" alt="Flowers in Chania" class="cardImage">
+          <div class="text-box">
+              <h2>IMAGINE</h2>
+              <h3> how different your world could be if you think in a new way.</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/john-salzarulo-CkiWSExXjDU-unsplash.jpg" alt="Flowers in Chania" class="cardImage">
+          <div class="text-box"> 
+            <h2>FERN</h2>
+            <h3>is a nice name for a gorgeous forest plant.</h3>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="two-col">
+          
+        <div>
+          <img src="img/aaron-burden-iMVzDFNyAUY-unsplash.jpg" class="image">
+        </div>
           <div>
-              <img src="img/john-salzarulo-CkiWSExXjDU-unsplash.jpg" alt="Flowers in Chania" class="image">
+            <a href="">
+              <h2 class="title-padding">
+                Learn more
+              </h2>
+            </a>
+            <div class="center-small-div">
+              <div class="vertical-line"></div>
+            </div>
+            <p>
+              <h3 class="text-padding">
+                If this was a real-life webpage you would have been able to click here and discover what is hidden behind this exciting "Learn more" title. But for know, you will not know. To be continued...
+              </h3>
+            </p>
           </div>
-        <div class="text-box"><h2>SONDER</h2><h3>is a word you might have to google, cuz I am too mysterious to tell you right away.</h3></div>
-        <div class="text-box">
-          <p>
-            <h2>IMAGINE</h2>
-            <h3> how different your world could be if you think in a new way. </h3>
-          </p>
-        </div>
-
-        <div class="text-box"> <h2>FERN</h2><h3>is a nice name for a gorgeous forest plant.</h3></div>
-      </div>
-      <div class="row">
-        <div class="two-col">
-          <div><img src="img/aaron-burden-iMVzDFNyAUY-unsplash.jpg" class="imageMedium"> </div>
-          <div><a href=""><h2 class="title-padding">Learn more</h2></a><div class="center-small-div"><div class="vertical-line"> </div></div><p><h3 class="text-padding">If this was a real-life webpage you would have been able to click here and discover what is hidden behind this exciting "Learn more" title. But for know, you will not know. To be continued...</h3></p></div>
         </div>
       </div>
     <footer>
-      <p>Follow me!</p>
+      <h2>Follow me!</h2>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -12,8 +12,28 @@ body, html {
   background-color: whitesmoke;
   text-decoration: none;
 }
+
+h1{
+  font-size: 100px;
+}
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size: 15px;
+  padding: 15px 30px 10px 30px;
+}
+h4 {
+  font-family: 'Cormorant Garamond', serif;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  text-align: center;
+}
 .wrapper {
-   max-width: 96%;
+   max-width: 100%;
    margin: auto;
 }
 .navbar {
@@ -37,9 +57,6 @@ body, html {
 }
 .navbar-links li a:hover{
   color: rgb(84, 124, 78);
-}
-a {
-  text-decoration: none;
 }
 
 #subscribe {
@@ -134,13 +151,11 @@ a {
 }
 .row.first {
   background-color: hsl(85, 33%, 83%);
-  margin-top: 20px;
 }
 .text-banner {
   margin: auto;
-  width: 50%;
+  width: 66%;
   text-align: center;
-  margin-bottom: 20px;
 }
 .cards {
   display: flex;
@@ -191,19 +206,6 @@ a {
   clear: both;
 }
 
-h1{
-  font-size: 120px;
-}
-h2{
-  font-size: 20px;
-}
-h3{
-  font-size: 15px;
-  padding: 15px 30px 10px 30px;
-}
-h4 {
-  font-family: 'Cormorant Garamond', serif;
-}
 .image{
   width: 50%;
   object-fit: cover;
@@ -215,10 +217,6 @@ h4 {
   width: 100%;
   height: 600px;
 }
-a:link {
-  text-align: center;
-}
-
 .vertical-line{
   border-bottom: 1px solid #222121;
 }

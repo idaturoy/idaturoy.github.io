@@ -36,6 +36,18 @@ a {
    max-width: 100%;
    margin: auto;
 }
+.row {
+  width: 100%;
+  padding: 70px 0px;
+}
+.row.first {
+  background-color: hsl(85, 33%, 83%);
+}
+ /* HEADER */
+.logo {
+  height: 40px;
+  margin: 20px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -59,19 +71,8 @@ a {
   color: rgb(84, 124, 78);
 }
 
-#subscribe {
-  border: 2px solid black;
-  padding: 10px 20px 10px 20px;
-}
 
-#subscribe:hover {
-  border-color: rgb(84, 124, 78);
-}
-
-.logo {
-  height: 40px;
-  margin: 20px;
-}
+ /* Menu animation when smaller screen */
 
 .toggle-botton {
   position: absolute;
@@ -124,9 +125,6 @@ a {
     align-items: flex-start;
     z-index: auto;
   }
-  #subscribe {
-    border: none;
-  }
   .navbar-links.active {
     display: inline;
   }
@@ -145,40 +143,34 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.row {
-  width: 100%;
-  padding: 70px 0px 70px 0px;
-}
-.row.first {
-  background-color: hsl(85, 33%, 83%);
-}
+
+ /* ABOUT ME */
+
 .text-about-me {
   margin: auto;
   width: 66%;
  
 }
+
+ /* MY PROJECTS */
+
 .cards {
   display: flex;
   justify-content: center;
   align-items: stretch;
+
   flex-wrap: wrap;
   width: 90%;
   margin: auto;
 }
 .card{
-  padding: 2rem;
-  display: flex;
+  margin: 2rem;
   flex: 1;
-  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+
 }
 
-.cardImage {
-  height: 20rem;
-  width: 100%;
-  object-fit: cover;
-}
 .text-box{
-  background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
   overflow: hidden;
@@ -196,7 +188,7 @@ a {
   background-color: rgb(255, 255, 255);
 }
 .title-padding{
-  padding: 20px 10px 0px 10px;
+  padding: 20px 10px 0px;
 }
 
 /* Clear floats after the columns */
@@ -222,8 +214,7 @@ a {
 }
 .center-small-div{
   width: 80px;
-  margin: auto;
-  margin-top: 10px;
+  margin: 10px auto;
 }
 .text-flex {
   display: flex;
@@ -232,8 +223,5 @@ a {
 footer {
   background-color: rgb(30, 88, 81);
   padding: .75rem;
-  color: white;
-  text-align: center;
-  font-size: .75rem;
-  margin: 0 -40px -20px -40px;
+  margin: 0 -40px -20px;
 }

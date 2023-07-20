@@ -3,101 +3,116 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="mystyle.css"/>
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" 
   rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Ida Turøy</title>
-
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="header-image">
-      <nav class="navbar">
-        <a href='#'><img src="img/logo.svg" class="logo" ></a>
-        <div class="toggle-botton">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
+    <nav class="navbar px-5 mx-2">
+      <i class="bi bi-balloon-heart"></i>
+      <div class="toggle-botton">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <div class="navbar-links">
+          <ul>
+            <li><h4><a href="#projects">Projects</a></h4></li>
+            <li><h4><a href="#aboutMe">About me</a></h4></li>
+          </ul>
+      </div>
+    </nav>
+<div class="coral-background">
+  <div class="container col-xxl-8 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./img/image-me.JPG" class="rounded d-block mx-lg-auto img-fluid" alt="Photo of me" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">I AM IDA TURØY</h1>
+        <p class="lead">I have a passion for web applications, systems and user interaction - basically the full stack. <br> Welcome to my website!</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="https://github.com/idaturoy" class="btn btn-outline-dark btn-lg px-4">View on Github</a>
         </div>
-        <div class="navbar-links">
-            <ul>
-              <li><h4><a href="#aboutMe">About me</a></h4></li>
-              <li><h4><a href="#projects">Projects</a></h4></li>
-            </ul>
-        </div>
-      </nav>
-      <div class="center-text">
-        <h1>IDA TURØY</h1>
       </div>
     </div>
- 
-    <div class="row first" id="aboutMe">
-        <div class="text-about-me">
-            <h2>ABOUT ME</h2>
-            <div class="center-small-div">
-              <div class="vertical-line"> </div>
-            </div>
-            <p>My name is Ida and I am currently working as an implementation engineer at the Norwegian insurance company Gjensidige ASA. Here my job is to configure a new core system. I have a master degree in technology, more specific in digital signal processing and communication from Norwegian University of Science and Technology. I have an interest in web applications, systems and user interaction - basically the full stack, and I am eager to learn about this vast area of technologies.
-            </p>
-        </div>
-    </div>
-    <div class="row" id="projects">
-      <div class="text-banner">
-        <h2>MY PROJECTS</h2>
-        <div class="center-small-div">
-          <div class="vertical-line"> </div>
-        </div>
-        <p>Below are some of my web app projects. Try them out!</p>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <a href="https://idaturoy.github.io/myReadingList/">
-            <div class="text-box">
-            <!-- <h2>Reading List</h2> -->
-              <img src="img/appImages/readingListImage.png" alt="Reading List" class="card-image">
-              <h3>With this web app you can save books you have read and will read. Built with HTML, CSS and JS and is based on localStorage. </h3>
-            </div>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="https://idaturoy.github.io/calculator/">
-            <div class="text-box">
-              <h2>Calculator</h2>
-              <img src="img/appImages/calculatorImage.png" alt="Calculator" class="card-image">
-              <h3>This project I built with a more focus on JS classes and UI design.</h3>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="https://idaturoy.github.io/Etch-A-Sketch/">
-            <div class="text-box"> 
-              <!-- <h2>Etch-a-Sketch</h2> -->
-              <img src="img/appImages/etchASketchImage.png" alt="Etch-a-Sketch" class="card-image">
-              <h3>This is a web app for mindfulness and one of the first app I built with JS.</h3>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a class="no-deco" href="https://idaturoy.github.io/knittingCalculator/">
-            <div class="text-box"> 
-              <!-- <h2>Knitting Calculator</h2> -->
-              <img src="img/appImages/knittingCalculatorImg.png" alt="Knitting Calculator" class="card-image">
-              <h3>This is a web app for the knitters. Built upon React.</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div> 
-  
-    <footer>
-      Made by Ida Turøy
-    </footer>
   </div>
+</div>
+<div class="container" id="projects">
+  <h2 class="text-center py-5">SELECTED PROJECTS</h2>
+  <div class="row g-5 py-5">
+      <div class="col-lg-6 px-4">
+        <h3 class="fw-normal">Reading List</h3>
+        <p>With this web app you can save books you have read and will read. Built with HTML, CSS and JS and it uses localStorage. I have some many ideas for future development. Such as a reading goal tracker, categorize past, current and future books, use an API to OpenLibrary, etc.. </p>
+        <p>
+          <a class="btn btn-dark" href="https://idaturoy.github.io/myReadingList/">View project »</a>
+          <a class="btn btn-outline-dark" href="https://github.com/idaturoy/myReadingList">View code »</a>
+        </p>
+      </div><!-- /.col-lg-6 -->
+      <div class="col-lg-6 px-4">
+        <h3 class="fw-normal">Knitting Calculator</h3>
+        <p>This is a web app for knitters. As a knitter I always thought it's a hazzle to convert a kntting instructions to fit my yarn, and wanted to make a tool to calculate the different knitting measures. Built with React, with help from ChatGPT.</p>
+        <p><a class="btn btn-dark" href="https://idaturoy.github.io/knittingCalculator/">View project »</a>
+        <a class="btn btn-outline-dark" href="https://github.com/idaturoy/knittingCalculator">View code »</a></p>
+
+      </div><!-- /.col-lg-6 -->
+      <div class="col-lg-6 px-4">
+        <h3 class="fw-normal">Calculator</h3>
+        <p>This project I built with a focus on JS classes and UI design.</p>
+        <p><a class="btn btn-dark" href="https://idaturoy.github.io/calculator/">View project »</a>
+        <a class="btn btn-outline-dark" href="https://github.com/idaturoy/calculator">View code »</a></p>
+
+      </div><!-- /.col-lg-6 -->
+      <div class="col-lg-6 px-4">
+        <h3 class="fw-normal">Etch-a-Sketch</h3>
+        <p>This is a web app for mindfulness and one of the first app I built with JS. Only for desktop. If someone knows how to make it work for touch devices, please reach out.</p>
+        <p><a class="btn btn-dark" href="https://idaturoy.github.io/Etch-A-Sketch/">View project »</a>
+        <a class="btn btn-outline-dark" href="https://github.com/idaturoy/etch-a-sketch">View code »</a></p>
+
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+  </div>
+  <div class="container coral-background" id="aboutMe">
+    <div class="row">
+      <div class="col-lg-12 p-5">
+        <h1>I ALSO ...</h1>
+        <div>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-2">
+            <i class="bi bi-book"></i> have a master in technology, and have a degree in digital signal processing and communication from, NTNU, Trondheim. 
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-2">
+            <i class="bi bi-heart"></i></i> am weak for cinnamon buns.
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-2">
+            <i class="bi bi-airplane-engines"></i> enjoy travelling, languages and new cultures.
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-2">
+            <i class="bi bi-infinity"></i> mass produce new ideas.
+          </a>
+
+
+          
+        </div>
+        </p>
+      </div>
+      <div class="col-lg-6">
+      </div>
+    </div>
+  </div>
+  <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="container pl-0">
+      <span class="text-body-secondary">@Ida Turøy</span>
+    </div>
+  </footer>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 
